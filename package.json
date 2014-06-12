@@ -1,0 +1,10 @@
+{
+  "name": "harry-cutts-jekyll",
+  "version": "0.0.0",
+  "author": "Harry Cutts",
+  "license": "All rights reserved",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.11.1"
+  }
+}
