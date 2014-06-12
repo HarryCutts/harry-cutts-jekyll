@@ -7,8 +7,8 @@ keywords: "computer science, programming, Southampton, University, User Experien
 	<h1>{{ site.title }}</h1>
 	<div class=tagline>Computer Scientist and UX designer</div>
 	<ul>
-		{% for page in site.pages %}
+		{% for page in site.pages %}{% unless page.hideInMenus or page.url == '/' %}
 		<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-		{% endfor %}
+		{% endunless %}{% endfor %}
 	</ul>
 </div>
