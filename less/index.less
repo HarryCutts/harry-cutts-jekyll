@@ -1,3 +1,38 @@
-.mugshot {
-	border-radius: 0.5em;
+.splashContainer {
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+
+	// TODO: background
+
+	.splash {
+		@splashWidth: 35em;
+		@splashHeight: 10em;
+
+		position: absolute;
+		margin: auto;
+		top: 0.5 * @splashHeight;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: @splashWidth;
+		height: 50%;
+
+		#mugshot {
+			float: left;
+			height: @splashHeight;
+
+			border-radius: 0.5em;
+		}
+
+		#title {
+			margin-top: 0;
+			margin-bottom: 0.1em;
+			font-size: 4em;
+		}
+	}
 }
+
