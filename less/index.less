@@ -37,6 +37,15 @@
 		}
 
 		nav { .horizontalMenu; }
+
+		@media (max-width: @splashWidth) {
+			// Centre-align elements, with #mugshot on its own row
+			width: auto;
+
+			text-align: center;
+
+			#mugshot { float: none; }
+		}
 	}
 }
 
