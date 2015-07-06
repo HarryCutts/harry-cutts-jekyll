@@ -1,5 +1,15 @@
 @import (reference) "modules.less";
 
+@font-face {
+	font-family: "DejaVu Sans ExtraLight";
+	src: local("DejaVu Sans ExtraLight"),
+		url("{{site.baseurl}}/fonts/DejaVuSans-ExtraLight.ttf");
+}
+
+body {
+	font-family: "DejaVu Sans ExtraLight", Arial, sans-serif;
+}
+
 .splashContainer {
 	top: 0;
 	bottom: 0;
@@ -11,7 +21,7 @@
 	// TODO: background
 
 	.splash {
-		@splashWidth: 35em;
+		@splashWidth: 36em;
 		@splashHeight: 10em;
 
 		position: absolute;
@@ -28,6 +38,7 @@
 			height: @splashHeight;
 
 			border-radius: 0.5em;
+			margin-right: 0.5em;
 		}
 
 		#title {
