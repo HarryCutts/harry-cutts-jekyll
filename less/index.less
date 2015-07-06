@@ -6,8 +6,15 @@
 		url("{{site.baseurl}}/fonts/DejaVuSans-ExtraLight.ttf");
 }
 
-body {
+@blue: #2162C3;
+
+html {
 	font-family: "DejaVu Sans ExtraLight", Arial, sans-serif;
+	background: linear-gradient(white, @blue) no-repeat center center fixed;
+}
+
+a, a:visited {
+	color: @blue;
 }
 
 .splashContainer {
@@ -21,7 +28,7 @@ body {
 	// TODO: background
 
 	.splash {
-		@splashWidth: 36em;
+		@splashWidth: 37em;
 		@splashHeight: 10em;
 
 		position: absolute;
@@ -31,7 +38,12 @@ body {
 		left: 0;
 		right: 0;
 		width: @splashWidth;
-		height: 50%;
+		height: 10.8em;
+
+		padding: 0.4em;
+		border-radius: 0.8em;
+
+		background: white;
 
 		#mugshot {
 			float: left;
@@ -52,6 +64,7 @@ body {
 		@media (max-width: @splashWidth) {
 			// Centre-align elements, with #mugshot on its own row
 			width: auto;
+			height: auto;
 
 			text-align: center;
 
@@ -70,4 +83,6 @@ body {
 
 	text-align: center;
 	font-size: small;
+
+	color: white;
 }
